@@ -1,0 +1,13 @@
+check,status,detail
+local_evidence_abstract,PASS,current evidence is intentionally local rather than a claim of large-scale benchmark dominance
+mechanistic_headline,PASS,The headline empirical claim is mechanistic
+smac_future_work,PASS,SMAC/SMACv2-scale experiments are left as future work unless actually run
+not_tuned_suite,PASS,not a tuned top-conference benchmark suite
+stronger_submission_comparisons,PASS,a stronger submission should compare learned \acct{} with AREL
+no_smac_result,PASS,"No SMAC, SMACv2, or cloud-scale benchmark result is reported"
+no_public_url,PASS,does not yet provide a public anonymous repository URL
+submission_readiness_target,PASS,\texttt{submission-readiness}
+state_of_the_art_claim,PASS,not present
+sota_claim,PASS,not present
+unqualified_outperformance,PASS,not present
+superior_benchmark_performance,PASS,not present
