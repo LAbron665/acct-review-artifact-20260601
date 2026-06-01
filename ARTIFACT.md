@@ -1,8 +1,9 @@
 # Artifact Notes
 
-This artifact is prepared for anonymous review packaging.  Its current release
-state is a verified local ZIP bundle, not a public anonymous GitHub or
-anonymous.4open.science URL.
+This artifact is prepared for anonymous review packaging.  It can be verified
+as a local ZIP bundle and staged as a review-only Git repository with anonymous
+commit metadata.  Final manuscript readiness is intentionally gated on an
+anonymous.4open.science review URL written by `finalize_anonymous_url.py`.
 
 ## Claims Supported by Current Runs
 
@@ -165,8 +166,9 @@ anonymous.4open.science URL.
   value-factorization baselines is included; the included PPO-style and
   MAPPO-style runs are compact local sanity checks rather than tuned benchmark
   implementations.
-- No public anonymous GitHub or anonymous.4open.science URL has been created
-  from this local package.
+- The manuscript has not yet been finalized with an anonymous.4open.science
+  review URL. Direct GitHub repository URLs should not be cited in the
+  double-blind paper.
 
 ## Anonymization Checklist
 
@@ -190,8 +192,10 @@ anonymous.4open.science URL.
   push.
 - Alternatively, after `gh auth login`, run
   `PYTHONPATH=. .venv/bin/python publish_anonymous_release_repo.py --github-repo <owner/fresh-review-only-repo> --dry-run`
-  and then rerun without `--dry-run` to create and push a fresh public
-  review-only GitHub repository.
+  and then rerun without `--dry-run` to create and push a fresh review-only
+  GitHub repository. Add `--visibility private` if the anonymous.4open.science
+  login session can read private repositories; otherwise use the default public
+  visibility and cite only the anonymous.4open.science URL in the paper.
 - Run `PYTHONPATH=. .venv/bin/python experiments/audit_submission_readiness.py`
   to write `results/submission_readiness.csv`; use `--strict` only for a final
   pre-submission gate after the anonymous review URL has been created.

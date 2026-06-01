@@ -2,9 +2,10 @@
 
 This directory contains a local reference implementation for **Agent-Time
 Counterfactual Credit Transport (ACCT)**.  The implementation is intentionally
-small and identity-scrubbed so it can be packaged before creating an anonymous
-review link.  The current release state is a verified local ZIP bundle rather
-than a public anonymous repository.
+small and identity-scrubbed so it can be verified as a local ZIP bundle or
+mirrored into a review-only Git repository before creating an anonymous review
+link.  Final submission readiness is intentionally gated on inserting the
+anonymous.4open.science URL with `finalize_anonymous_url.py`.
 
 ## Layout
 
